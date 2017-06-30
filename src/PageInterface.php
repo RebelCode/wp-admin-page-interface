@@ -3,6 +3,7 @@
 namespace RebelCode\WordPress\Admin\Page;
 
 use Dhii\Data\IdAwareInterface;
+use Dhii\Util\String\StringableInterface;
 
 /**
  * Represents a WordPress admin page.
@@ -32,12 +33,9 @@ interface PageInterface extends IdAwareInterface
     /**
      * Retrieves the content to be rendered for this page.
      *
-     * The content is not limited to a string or string-like object. This method is free to return anything that it
-     * deems appropriate for rendering, such as a callback, DOM or resource URI.
-     *
      * @since [*next-version*]
      *
-     * @return mixed
+     * @return string|StringableInterface
      */
     public function getContent();
 }
