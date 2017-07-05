@@ -13,15 +13,6 @@ use Dhii\Util\String\StringableInterface;
 interface PageInterface extends IdAwareInterface
 {
     /**
-     * Retrieves the unique ID of the page.
-     *
-     * @since [*next-version*]
-     *
-     * @return string
-     */
-    public function getId();
-
-    /**
      * Retrieves the title of the page.
      *
      * @since [*next-version*]
