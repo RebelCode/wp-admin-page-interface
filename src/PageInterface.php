@@ -17,7 +17,7 @@ interface PageInterface extends IdAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return string
+     * @return string|StringableInterface
      */
     public function getTitle();
 
